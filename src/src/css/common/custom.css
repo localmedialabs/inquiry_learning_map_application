@@ -1,0 +1,253 @@
+html {
+  overflow: auto;
+  height: 100%;
+}
+
+/** base area */
+#base_area {
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  background-image: url('../../assets/common/background.png');
+  overflow: hidden;
+}
+/** header area */
+.header_area {
+  top: 0vh;
+  left: 0vw;
+  height:10vh;
+  width: 100vw;
+  z-index: 995;
+  background-image: url('../../assets/header.png');
+  background-size: 90vh auto;
+  color: #000000;
+  background-color: #42b983;
+}
+
+.header_title {
+  position: absolute;
+  padding: 2.5vh 0px 2.5vh 5vw;
+  height: 10vh;
+  z-index: 999;
+}
+
+.header_menu_button {
+  position: absolute;
+  top: 2.5vh;
+  right: 5vw;
+  height: 5vh;
+  z-index: 999;
+  background: rgba(255,255,255, 0);
+}
+
+
+/** modal */
+.modalarea_base {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: 999;
+    height:90vh;
+    width: 100%;
+    color: #000;
+    background: rgba(0,0,0, 0.7);
+}
+.modalarea_contents {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    z-index: 999;
+    height:50vh;
+    width: 50vw;
+    color: #000;
+    background: rgba(255,255,255, 1);
+}
+.modalarea_contentsheader {
+  height:7vh;
+}
+.modalarea_contentsbody {
+  height:33vh;
+  overflow:auto;
+}
+.modalarea_contentsfooter {
+  height:10vh;
+}
+
+/** menu */
+.app_menu_area {
+  position: absolute;
+  z-index: 980;
+  height: 0;
+  width: 40vw;
+  color: #000;
+  background: rgba(255,255,255, 0);
+}
+.app_menu_area_active {
+  right: 0vw;
+  transition: 1s;
+}
+
+.app_menu_area_close {
+  right: -100vw;
+  transition: 1s;
+}
+
+.app_menu_item {
+  width: 40vw;
+  font-size: 140%;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  padding:5px 10px;
+  border-top:1px solid #f1f6fc;
+  border-bottom:1px solid #84b2e0;
+  background: rgba(255,255,255, 0.7);
+}
+
+.app_menu_item:hover {
+  width: 40vw;
+  color: #000;
+  background: rgba(55,221,232, 0.7);
+}
+.app_menu_item:first-child{
+    border-top:0px;
+}
+.app_menu_item:last-child{
+    border-bottom:0px;
+}
+
+.app_menu_item .disable_menu {
+  color: #CCC;
+}
+
+/** app contents */
+.contents_area {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  z-index: 999;
+  height:50vh;
+  width: 50vw;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.contents_area_ss {
+  position: absolute;
+  top: 40vh;
+  left: 35vw;
+  z-index: 999;
+  height:10vh;
+  width: 30vw;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.contents_area_l {
+  position: absolute;
+  top: 15vh;
+  left: 15vw;
+  z-index: 999;
+  height:50vh;
+  width: 70vw;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.contents_area_ll {
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  z-index: 999;
+  height:70vh;
+  width: 90vw;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.contents_area_body_ll {
+  overflow: scroll;
+  height:60vh;
+  width: 90vw;
+}
+
+/** bottom menu */
+.bottom_menu_area {
+  position: absolute;
+  left: 0;
+  z-index: 990;
+  height:40vh;
+  width: 100%;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.bottom_menu_area_l {
+  position: absolute;
+  left: 0;
+  z-index: 990;
+  height:70vh;
+  width: 100%;
+  color: #000;
+  background: rgba(255,255,255, 0.7);
+}
+
+.bottom_menu_area_active {
+  top: 75vh;
+  transition: 0.5s;
+}
+.bottom_menu_area_l_active {
+  top: 60vh;
+  transition: 0.5s;
+}
+
+.bottom_menu_area_close {
+  top: calc(100% - 63px);
+  transition: 0.5s;
+}
+
+/**  splach area */
+.splach_main_area {
+  position: absolute;
+  text-align: center;
+  top: 25vh;
+  left: 25vw;
+  height:50vh;
+  width: 50vw;
+}
+.splach_main_image {
+  width: 30vw;
+}
+.splach_loading {
+  margin-top: 5vh;
+  width: 10vw;
+}
+.loading {
+  width: 50;
+}
+/** form parts */
+.group_button_box {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 5vw;
+  width: 5vw;
+}
+
+.group_button_box_m {
+  overflow: scroll;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 15vw;
+  width: 15vw;
+}
+
+.group_button_box_l {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 15vw;
+  width: 15vw;
+}
+.group_button_box_ll {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 20vh;
+  width: 20vh;
+}

@@ -1,0 +1,12 @@
+{
+    "ECMN1000":{"reponse_code":200,"message":"システムエラー"}
+    ,"ECMN2000":{"reponse_code":200,"message":"アプリケーションエラー"}
+    ,"ECMN3000":{"reponse_code":200,"message":"内部モジュールエラー"}
+    ,"ECMN9999":{"reponse_code":200,"message":"原因不明エラー"}
+
+    ,"EAPC1001":{"reponse_code":404,"message":"指定されたリソースは存在しません。"}
+    ,"EAPC1002":{"reponse_code":200,"message":""}
+    ,"EAPC1003":{"reponse_code":200,"message":""}
+    ,"EAPC1004":{"reponse_code":200,"message":""}
+
+}

@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^api/(.*)$ /api/api.php?api_path=$1 [QSA,L]
+RewriteRule ^(.*)$ /api/api.php?api_path=$1 [QSA,L]
+
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Headers "*"
+Header set Access-Control-Allow-Methods GET,PUT,POST,DELETE

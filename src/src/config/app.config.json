@@ -1,0 +1,93 @@
+{
+    "app_config": {
+        "user_regist": "off"
+    },
+    "app_menu": [
+        {"name":"地図を選ぶ", "icon_key":"map", "url":"/basemap", "auth": false, "enable": true},
+        {"name":"施設情報", "icon_key":"facilities", "url":"/data", "auth": true, "enable": true},
+        {"name":"防災データ", "icon_key":"disaster", "url":"/datalayer", "auth": false, "enable": true},
+        {"name":"みんなの地図", "icon_key":"everyoneMap", "url":"/mapedit", "auth": true, "enable": true},
+        {"name":"データマップ", "icon_key":"map", "url":"/datamap", "auth": false, "enable": true},
+        {"name":"設定", "icon_key":"setting", "url":"/login", "auth": false, "enable": true},
+        {"name":"このサイトについて", "icon_key":"", "url":"/about", "auth": false, "enable": true}
+    ],
+    "map_config": {
+      "latitude": 33.728311,
+      "longitude": 130.972983,
+      "zoomlevel": 13,
+      "maxzoomlevel": 18,
+      "portal_map_panel": "gsi_base_map"
+    },
+    "map_edit_type": {
+        "marker_menu": {
+            "marker_1": {"type": "marker", "name":"情報", "image_type": "information"},
+            "edit_polyline": {"type": "polyline", "name":"線", "image_type": "edit_line"},
+            "edit_circle": {"type": "circle", "name":"円", "image_type": "edit_circle"}
+        }
+    },
+    "user_group": [
+        {"name":"デモグループ01", "value":"DEMO0001"},
+        {"name":"デモグループ02", "value":"DEMO0002"},
+        {"name":"デモグループ03", "value":"DEMO0003"}
+    ],
+    "map_panel_info": {
+        "osm": {
+            "name": "open street map",
+            "panel": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "attribution": "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a>"
+        },
+        "gsi_base_map": {
+            "name": "国土地理院 地図",
+            "panel": "https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png",
+            "attribution": "Map data &copy; <a href=\"https://maps.gsi.go.jp/development/ichiran.html\">国土地理院</a>"
+        },
+        "gsi_base_map_light": {
+            "name": "国土地理院 地図 （淡泊地図）",
+            "panel": "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
+            "attribution": "Map data &copy; <a href=\"https://maps.gsi.go.jp/development/ichiran.html\">国土地理院</a>"
+        },
+        "gsi_base_map_photo": {
+            "name": "国土地理院 地図 （写真）",
+            "panel": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+            "attribution": "Map data &copy; <a href=\"https://maps.gsi.go.jp/development/ichiran.html\">国土地理院</a>"
+        }
+    },
+    "map_datalayter_info": {
+        "flood": {
+            "name": "国管理河川_洪水浸水想定区域",
+            "image":"kouzui",
+            "panel": "https://disaportaldata.gsi.go.jp/raster/01_flood_l2_shinsuishin_kuni_data/{z}/{x}/{y}.png",
+            "attribution": "国土交通省　各地方整備局"
+        },
+        "d_f": {
+            "name": "土砂災害警戒区域（土石流）福岡県",
+            "image":"dosekiryuu",
+            "panel": "https://disaportaldata.gsi.go.jp/raster/05_dosekiryukeikaikuiki_data/40/{z}/{x}/{y}.png",
+            "attribution": "国土数値情報　平成29年度土砂災害警戒区域／国土交通省国土政策局「国土数値情報（平成29年度土砂災害警戒区域）」をもとに国土地理院が加工"
+        },
+        "g_f": {
+            "name": "土砂災害警戒区域（地滑り）　福岡県",
+            "image":"jisuberi",
+            "panel": "https://disaportaldata.gsi.go.jp/raster/05_jisuberikeikaikuiki_data/40/{z}/{x}/{y}.png",
+            "attribution": "国土数値情報　平成29年度土砂災害警戒区域／国土交通省国土政策局「国土数値情報（平成29年度土砂災害警戒区域）」をもとに国土地理院が加工"
+        },
+        "k_f": {
+            "name": "急傾斜地崩壊危険箇所",
+            "image":"jisuberi",
+            "panel": "https://disaportaldata.gsi.go.jp/raster/05_kyukeisyachihoukai_data/40/{z}/{x}/{y}.png",
+            "attribution": "国土数値情報　平成22年度土砂災害危険箇所／国土交通省国土政策局「国土数値情報（平成22年度土砂災害危険箇所）」をもとに国土地理院が加工"
+        },
+        "flood_f": {
+            "name": "浸水想定区域　福岡県",
+            "image":"kouzui",
+            "panel": "https://demo.lmlabs.tech/raster/flood/40/{z}/{x}/{y}.png",
+            "attribution": "国土数値情報　河川管理者（国土交通大臣、都道府県知事）「浸水想定区域図」"
+        },
+        "t_f": {
+            "name": "津波浸水想定　福岡県",
+            "image":"tunami",
+            "panel": "https://demo.lmlabs.tech/raster/tsunami/40/{z}/{x}/{y}.png",
+            "attribution": "国土数値情報　都道府県　「津波浸水想定データ」"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "app\\": "../../application/"
+        }
+    },
+    "require": {
+        "smarty/smarty": "3.1.33"
+        ,"vlucas/valitron": "dev-master"
+    }
+}

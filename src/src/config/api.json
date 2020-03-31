@@ -1,0 +1,87 @@
+{
+    "api_common_info" : {
+        "host": "http://******"
+    },
+    "api_info" : {
+        "login": {
+            "name": "ログイン",
+            "method": "GET",
+            "endpoint": "/api/v1/authentication"
+        },
+        "logout": {
+              "name": "ログアウト",
+              "method": "GET",
+              "endpoint": "/api/v1"
+        },
+        "auth_check": {
+            "name": "認証チェック",
+            "method": "GET",
+            "endpoint": "/api/v1/authentication/check"
+        },
+        "account_regist": {
+            "name": "アカウント登録",
+            "method": "PUT",
+            "endpoint": "/api/v1/account/regist"
+        },
+        "mydata": {
+            "name": "マイデータ取得",
+            "method": "GET",
+            "endpoint": "/api/v1/mydata"
+        },
+        "account_log": {
+            "name": "アカウント操作ログ",
+            "method": "GET",
+            "endpoint": "/api/v1/user/operation/log"
+        },
+        "dataset_list": {
+            "name": "データセット取得",
+            "method": "GET",
+            "endpoint": "/api/v1/dataset"
+        },
+        "dataset_regist": {
+            "name": "データセット登録",
+            "method": "PUT",
+            "endpoint": "/api/v1/dataset"
+        },
+        "dataset_del": {
+            "name": "データセット削除",
+            "method": "DELETE",
+            "endpoint": "/api/v1/dataset"
+        },
+        "dataset_detail": {
+            "name": "データセット詳細情報取得",
+            "method": "GET",
+            "endpoint": "/api/v1/dataset/detail"
+        },
+        "map_regist": {
+            "name": "地図情報登録",
+            "method": "PUT",
+            "endpoint": "/api/v1/map"
+        },
+        "map_list_get": {
+            "name": "地図情報取得",
+            "method": "GET",
+            "endpoint": "/api/v1/map"
+        },
+        "map_detail_list_get": {
+            "name": "地図詳細情報取得",
+            "method": "GET",
+            "endpoint": "/api/v1/map/detail"
+        },
+        "map_detail_get": {
+            "name": "地図詳細情報取得",
+            "method": "GET",
+            "endpoint": "/api/v1/map/detail"
+        },
+        "map_edit_mod": {
+            "name": "地図情報更新",
+            "method": "PUT",
+            "endpoint": "/api/v1/map/detail"
+        },
+        "map_detail_del": {
+            "name": "地図情報更新",
+            "method": "DELETE",
+            "endpoint": "/api/v1/map/detail"
+        }
+    }
+}
