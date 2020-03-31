@@ -114,15 +114,19 @@ map_configを修正することで変更が可能です。
 
 ```
 2. データ書き込み機能でのアイコンの削除などの設定についてはmap_edit_type以下の項目設定します。
+```
     "map_edit_type": {
         "marker_menu": {
             "marker_1": {"type": "marker", "name":"情報", "image_type": "information"},
             "edit_polyline": {"type": "polyline", "name":"線", "image_type": "edit_line"},
             "edit_circle": {"type": "circle", "name":"円", "image_type": "edit_circle"}
         }
-    },
+    }
+```
 
 #### ベースマップについて
+>ベースマップに利用される地図タイルについては設定ファイルを追加修正することにより変更が可能です。
+
 ```
 ・設定方法について
 app.config.jsonの設定ファイルのmap_panel_info以下の項目を設定変更することで地図タイルの追加削除が出来ます。
